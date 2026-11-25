@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#354e5b"/><stop offset=".55" stop-color="#1a252c"/><stop offset="1" stop-color="#101317"/></linearGradient><pattern id="p" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#b8d8ed" stroke-opacity=".1"/></pattern></defs><rect width="1280" height="720" fill="url(#g)"/><rect width="1280" height="720" fill="url(#p)"/><path d="M730 140h340v340H730z" fill="none" stroke="#b8d8ed" stroke-opacity=".25" stroke-width="2"/><path d="M900 140v340M730 310h340" stroke="#b8d8ed" stroke-opacity=".25" stroke-width="2"/><circle cx="900" cy="310" r="110" fill="none" stroke="#b8d8ed" stroke-opacity=".4" stroke-width="2"/><text x="72" y="112" fill="#b8d8ed" font-family="Arial,sans-serif" font-size="25" letter-spacing="7">REAL-WORLD COMPOSITING</text><text x="72" y="415" fill="#f1f0eb" font-family="Arial,sans-serif" font-size="92" font-weight="700">ACNHOES IRL</text><text x="76" y="475" fill="#c1c5bf" font-family="Arial,sans-serif" font-size="25" letter-spacing="4">ADD YOUR VIDEO TO CONTINUE</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280" role="img" aria-label="Acnhoes IRL vertical video placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#354e5b"/><stop offset=".55" stop-color="#1a252c"/><stop offset="1" stop-color="#101317"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#b8d8ed" stroke-opacity=".11"/></pattern>
+  </defs>
+  <rect width="720" height="1280" fill="url(#bg)"/><rect width="720" height="1280" fill="url(#grid)"/>
+  <path d="M390 280h230v230H390zM505 280v230M390 395h230" fill="none" stroke="#b8d8ed" stroke-opacity=".26" stroke-width="2"/>
+  <circle cx="505" cy="395" r="83" fill="none" stroke="#b8d8ed" stroke-opacity=".42" stroke-width="2"/>
+  <text x="58" y="116" fill="#b8d8ed" font-family="Arial,sans-serif" font-size="18" letter-spacing="3">REAL-WORLD COMPOSITING</text>
+  <text x="58" y="790" fill="#f1f0eb" font-family="Arial,sans-serif" font-size="63" font-weight="700">ACNHOES IRL</text>
+  <text x="62" y="845" fill="#c1c5bf" font-family="Arial,sans-serif" font-size="17" letter-spacing="2">ADD YOUR VIDEO TO CONTINUE</text>
+  <text x="60" y="1190" fill="#b8d8ed" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">02 / 03</text>
+</svg>
