@@ -1,13 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280" role="img" aria-label="Acnhoes vertical video placeholder">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280" role="img" aria-label="Acnhoes video preview placeholder">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#566c3b"/><stop offset=".52" stop-color="#222d26"/><stop offset="1" stop-color="#111418"/></linearGradient>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#d8f4a4" stroke-opacity=".11"/></pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#645344"/><stop offset=".52" stop-color="#35302b"/><stop offset="1" stop-color="#211e1b"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#e3a07a" stop-opacity=".55"/><stop offset="1" stop-color="#e3a07a" stop-opacity="0"/></radialGradient>
   </defs>
-  <rect width="720" height="1280" fill="url(#bg)"/><rect width="720" height="1280" fill="url(#grid)"/>
-  <circle cx="510" cy="430" r="205" fill="none" stroke="#c4f36b" stroke-opacity=".28" stroke-width="2"/>
-  <circle cx="510" cy="430" r="148" fill="none" stroke="#c4f36b" stroke-opacity=".22" stroke-width="2"/>
-  <text x="58" y="116" fill="#c4f36b" font-family="Arial,sans-serif" font-size="19" letter-spacing="4">SOCIAL MEDIA PROJECT</text>
-  <text x="58" y="820" fill="#f1f0eb" font-family="Arial,sans-serif" font-size="76" font-weight="700">ACNHOES</text>
-  <text x="62" y="875" fill="#c1c5bf" font-family="Arial,sans-serif" font-size="18" letter-spacing="2">ADD YOUR VIDEO TO CONTINUE</text>
-  <text x="60" y="1190" fill="#c4f36b" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">01 / 03</text>
+  <rect width="720" height="1280" fill="url(#bg)"/>
+  <circle cx="520" cy="420" r="360" fill="url(#glow)"/>
+  <circle cx="510" cy="405" r="205" fill="none" stroke="#efc5aa" stroke-opacity=".28" stroke-width="3"/>
+  <circle cx="510" cy="405" r="150" fill="none" stroke="#efc5aa" stroke-opacity=".16" stroke-width="2"/>
+  <path d="M110 300c70-72 182-78 252-8 39 39 41 105 4 145-37 40-99 41-137 3-21-21-21-55 0-76 19-19 50-18 68 1" fill="none" stroke="#e9b18d" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+  <path d="M90 955c120-78 274-83 400-12" fill="none" stroke="#f1d1bc" stroke-opacity=".2" stroke-width="2"/>
+  <text x="58" y="113" fill="#f0c3a6" font-family="Arial,sans-serif" font-size="20" letter-spacing="5">SOCIAL VIDEO</text>
+  <text x="58" y="1010" fill="#f8f0e9" font-family="Arial,sans-serif" font-size="78" font-weight="700" letter-spacing="-3">ACNHOES</text>
+  <text x="62" y="1065" fill="#d7c4b7" font-family="Arial,sans-serif" font-size="19" letter-spacing="3">VIDEO PREVIEW</text>
+  <circle cx="360" cy="690" r="49" fill="#1c1816" fill-opacity=".35" stroke="#f0c3a6" stroke-opacity=".8" stroke-width="2"/>
+  <path d="M348 665l34 25-34 25z" fill="#f6e7db" opacity=".9"/>
 </svg>

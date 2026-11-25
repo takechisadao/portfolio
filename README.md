@@ -1,75 +1,93 @@
-# Creative Portfolio — GitHub Pages starter
+# Creative Portfolio
 
-This is a one-page creative portfolio inspired by the sample site you shared: dark background, lime accent, Manrope + DM Mono typography, sticky navigation, and responsive layout. It is designed around **vertical 9:16 videos** for Acnhoes, Acnhoes IRL, and Chibinvasion.
+This repository contains my one-page creative portfolio, published with GitHub Pages.
 
-## 1. Before publishing
+## Site structure
 
-Open `index.html` and replace:
+```text
+portfolio/
+├── index.html
+├── README.md
+├── css/
+│   └── main.css
+├── js/
+│   └── main.js
+└── assets/
+    ├── posters/
+    │   ├── acnhoes.svg
+    │   ├── acnhoes-irl.svg
+    │   └── chibinvasion.svg
+    └── videos/
+```
 
-- `[YOUR NAME]` with the name you want to display.
-- `your.email@example.com` with your public contact email.
-- Social links if your profile URLs change.
+## Before sharing the site
 
-The résumé/CV links are currently left inside HTML comments, so they do not appear on the page. When you have a PDF ready, you can remove the comments around any CV link and add the PDF file.
+- Check the display name in `index.html`.
+- Add a real public contact email when ready. The placeholder email has intentionally been removed so an `example.com` address is not shown publicly.
+- Check the TikTok and Instagram links.
+- Replace the three placeholder images with the actual video players as the clips are ready.
 
-The project descriptions are draft wording based on the information you provided. Review them before publishing.
+## Add the vertical videos
 
-## 2. Add your vertical videos
+Export short MP4 clips using H.264 video and AAC audio. 720 × 1280 or 1080 × 1920 at 24–30 fps is a good starting point. Compress each clip for the web; do not upload camera originals or high-bitrate masters.
 
-Copy your compressed MP4 files into `assets/videos/` using these exact names:
+Put the video files in `assets/videos/` using these names:
 
 - `acnhoes.mp4`
 - `acnhoes-irl.mp4`
 - `chibinvasion-wip.mp4`
 
-The video frames are designed for portrait **9:16** footage. On desktop, the video appears beside its description; on mobile, it is centered above the description and scales to the screen width. The HTML video players use `controls`, `playsinline`, and `preload="none"` so clips are not intentionally downloaded when the page first opens.
+Then, in `index.html`, replace the relevant placeholder block:
 
-Recommended export settings:
+```html
+<div class="project-media placeholder-media">
+  <img src="assets/posters/acnhoes.svg" alt="Acnhoes project video placeholder" loading="lazy">
+</div>
+```
 
-- MP4 / H.264
-- 1080 × 1920 (or 720 × 1280)
-- 24–30 fps
-- AAC audio
-- Use a web-friendly bitrate and keep each clip as small as practical. A short portfolio excerpt is usually better than uploading a full-length source video.
+with a video player:
 
-The SVG files in `assets/posters/` are portrait placeholder covers. Replace them with a still frame from each real video when ready. A JPG or WebP poster is also fine; update the `poster` path in `index.html` if you change the filename.
+```html
+<div class="project-media">
+  <video controls playsinline preload="none" poster="assets/posters/acnhoes.svg" aria-label="Acnhoes short-form video">
+    <source src="assets/videos/acnhoes.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div>
+```
 
-## 3. Preview on your computer
+Repeat for the other two projects, changing the poster, filename, and accessible label. The CSS already supports vertical 9:16 videos on desktop and mobile. The project media area has no text overlay, so the video remains the focus.
 
-From this folder, run:
+## Preview locally
+
+From the repository folder, run:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000` on your computer. To check the mobile layout, resize the browser window or open the same local-network address on your phone while both devices are on the same Wi-Fi network. `localhost` on a phone refers to the phone itself, not your computer.
+Open `http://localhost:8000` on the computer. To preview on a phone, start the server with:
 
-## 4. Publish with GitHub Pages
+```bash
+python -m http.server 8000 --bind 0.0.0.0
+```
 
-1. Create a GitHub repository. For the cleanest address, name it `<your-github-username>.github.io` if that user-site repository is available. Otherwise, name it `creative-portfolio`; the resulting address will include `/creative-portfolio/`.
-2. For GitHub Free, make the repository public to use GitHub Pages.
-3. Upload the **contents** of this folder to the repository root. Important: `index.html` must be at the root, not inside an extra `creative-portfolio-starter` folder.
-4. Open the repository's **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select branch **main** and folder **/(root)**, then click **Save**.
-7. After GitHub finishes publishing, the site address will appear in the Pages settings.
+Then open `http://YOUR-COMPUTER-IP:8000` on a phone connected to the same Wi-Fi network. Allow Python through Windows Firewall on private networks if prompted.
 
-Official guide: https://docs.github.com/en/pages/quickstart
+## Publish with GitHub Pages
 
-## 5. Important GitHub Pages video limits
+This is a project site, so its URL is:
 
-GitHub Pages is static hosting, not a dedicated video-streaming service. Published sites may be up to 1 GB and have a soft bandwidth limit of 100 GB per month. Git LFS cannot be used with GitHub Pages. GitHub's browser upload currently allows up to 25 MiB per file; command-line uploads allow up to 100 MiB per file. Avoid putting original camera footage or high-bitrate masters in this repository.
+`https://takechisadao.github.io/portfolio/`
 
-Official references:
-- https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits
-- https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
-- https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
-- https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage
+In the `takechisadao/portfolio` repository, open **Settings → Pages** and select **Deploy from a branch → main → /(root)**. Keep `index.html` in the repository root.
 
-## Project notes
+## GitHub Pages video limits
 
-- `Acnhoes`: social media comedy videos featuring Animal Crossing characters.
-- `Acnhoes IRL`: character integration/compositing experiment in pre-recorded footage.
-- `Chibinvasion`: original character project marked WIP. The Butter clip is a temporary test; Butter is not an original Chibinvasion character.
+GitHub Pages is static hosting, not a dedicated video-streaming service. The published site has a 1 GB size limit and a soft bandwidth limit of 100 GB per month. Git LFS cannot be used to serve files through GitHub Pages. GitHub's browser upload limit and Git command-line limits also apply, so keep portfolio clips short and compressed.
 
-The site does not include the actual videos or résumé PDF yet. Add your own MP4 files before sharing the portfolio publicly.
+## Project descriptions and credits
+
+- **Acnhoes:** independent short-form comedy content featuring Animal Crossing characters. Animal Crossing and its characters belong to Nintendo; the project is not affiliated with or endorsed by Nintendo.
+- **Acnhoes IRL:** ongoing 3D character integration experiment using Unity and Mocha Pro. The current description is intentionally limited to the work shown and does not claim reflections or occlusion work that is not in the current clip.
+- **Chibinvasion:** original character project in development. The Butter test uses a temporary character from Trickcal; Butter is not an original Chibinvasion character. Butter and Trickcal belong to EPID Games; the project is not affiliated with or endorsed by EPID Games.

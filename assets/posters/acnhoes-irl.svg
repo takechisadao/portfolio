@@ -1,13 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280" role="img" aria-label="Acnhoes IRL vertical video placeholder">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280" role="img" aria-label="Acnhoes IRL video preview placeholder">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#354e5b"/><stop offset=".55" stop-color="#1a252c"/><stop offset="1" stop-color="#101317"/></linearGradient>
-    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#b8d8ed" stroke-opacity=".11"/></pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#475258"/><stop offset=".55" stop-color="#2b3031"/><stop offset="1" stop-color="#1d1d1b"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#d79b7d" stop-opacity=".5"/><stop offset="1" stop-color="#d79b7d" stop-opacity="0"/></radialGradient>
   </defs>
-  <rect width="720" height="1280" fill="url(#bg)"/><rect width="720" height="1280" fill="url(#grid)"/>
-  <path d="M390 280h230v230H390zM505 280v230M390 395h230" fill="none" stroke="#b8d8ed" stroke-opacity=".26" stroke-width="2"/>
-  <circle cx="505" cy="395" r="83" fill="none" stroke="#b8d8ed" stroke-opacity=".42" stroke-width="2"/>
-  <text x="58" y="116" fill="#b8d8ed" font-family="Arial,sans-serif" font-size="18" letter-spacing="3">REAL-WORLD COMPOSITING</text>
-  <text x="58" y="790" fill="#f1f0eb" font-family="Arial,sans-serif" font-size="63" font-weight="700">ACNHOES IRL</text>
-  <text x="62" y="845" fill="#c1c5bf" font-family="Arial,sans-serif" font-size="17" letter-spacing="2">ADD YOUR VIDEO TO CONTINUE</text>
-  <text x="60" y="1190" fill="#b8d8ed" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">02 / 03</text>
+  <rect width="720" height="1280" fill="url(#bg)"/>
+  <circle cx="470" cy="410" r="350" fill="url(#glow)"/>
+  <path d="M130 275h460v460H130z" fill="none" stroke="#e5c2ac" stroke-opacity=".25" stroke-width="2"/>
+  <path d="M130 390h460M360 275v460" stroke="#e5c2ac" stroke-opacity=".12" stroke-width="2"/>
+  <circle cx="360" cy="505" r="132" fill="#e6a47f" fill-opacity=".07" stroke="#e6b596" stroke-opacity=".72" stroke-width="3"/>
+  <circle cx="360" cy="505" r="87" fill="none" stroke="#e6b596" stroke-opacity=".28" stroke-width="2"/>
+  <path d="M360 338v-34M360 706v-34M193 505h-34M561 505h-34" stroke="#e6b596" stroke-width="3" stroke-linecap="round"/>
+  <text x="58" y="113" fill="#e8b594" font-family="Arial,sans-serif" font-size="19" letter-spacing="4">3D CHARACTER TEST</text>
+  <text x="58" y="1010" fill="#f5eee8" font-family="Arial,sans-serif" font-size="70" font-weight="700" letter-spacing="-3">ACNHOES IRL</text>
+  <text x="62" y="1065" fill="#c8c4bf" font-family="Arial,sans-serif" font-size="19" letter-spacing="3">WORK IN PROGRESS</text>
+  <circle cx="360" cy="690" r="49" fill="#171717" fill-opacity=".35" stroke="#e6b596" stroke-opacity=".8" stroke-width="2"/>
+  <path d="M348 665l34 25-34 25z" fill="#f6e7db" opacity=".9"/>
 </svg>
